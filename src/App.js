@@ -8,9 +8,9 @@ function App() {
       <div className="container">
         <header className="App-header"></header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="hello" />
         </main>
-        <footer>Coded by Thai Ha Nguyen</footer>
+        <footer className="App-footer">Coded by Thai Ha Nguyen</footer>
       </div>
     </div>
   );
