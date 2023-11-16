@@ -47,21 +47,42 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <section>
-          <h1>What word do you want to look up?</h1>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              onChange={handleKeywordChange}
-              defaultValue={props.defaultKeyword}
-            />
-          </form>
-          <div className="hint">
-            suggested words: sunrise, wine, yoga, plants
+        <header className="App-header">
+          <div className="tab-bar d-flex justify-content-between ">
+            <div className="d-flex align-self-center">
+              <i class="fa-solid fa-file"></i>
+              <p>http://thaiha-dictionary.app</p>
+            </div>
+            <div className="align-items-center">
+              <i class="fa-solid fa-window-minimize"></i>
+              <i class="fa-regular fa-window-restore"></i>
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </div>
           </div>
-        </section>
-        <Results results={results} />
-        <Photos photos={photos} />
+          <div className="header-body">
+            <h1>Dictionary</h1>
+            <h2 className="mb-3">What word do you want to look up?</h2>
+            <div className="search-form">
+              <form className="input-group" onSubmit={handleSubmit}>
+                <input
+                  type="search"
+                  onChange={handleKeywordChange}
+                  defaultValue={props.defaultKeyword}
+                />
+              </form>
+            </div>
+            <div className="hint">
+              suggested words: sunset, coding, yoga, plants...
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div className="container">
+            <Results results={results} />
+            <Photos photos={photos} />
+          </div>
+        </main>
       </div>
     );
   } else {

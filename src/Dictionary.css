@@ -1,17 +1,63 @@
+.App-header {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tab-bar {
+  padding: 5px 10px 3px;
+  background-color: #2b51ed;
+  color: white;
+}
+
+.tab-bar p {
+  padding-top: 3px;
+  font-weight: bold;
+}
+
+.tab-bar i {
+  padding: 8px;
+}
+
+.header-body {
+  padding: 60px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  padding: 10px 30px;
+}
+
 .Dictionary section {
-  background: white;
+  background: #ffffff;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
+  border: 2px solid #2b51ed;
 }
 
 .Dictionary input {
-  width: 100%;
-  padding: 12px 6px;
+  width: 55%;
+  padding: 15px 20px;
   color: #333;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #2b51ed;
+  border-radius: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.Dictionary input:hover,
+input:focus {
+  border: 2px solid #2b51ed;
+  color: black;
+}
+
+.Dictionary form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .Dictionary .hint {
@@ -20,7 +66,34 @@
 }
 
 .Dictionary h1 {
-  font-size: 18px;
+  font-size: 56px;
   font-weight: bold;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  color: #2b51ed;
+  letter-spacing: 0.15px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.Dictionary h2 {
+  font-size: 24px;
+}
+
+@media (max-width: 560px) {
+  .Dictionary h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .Dictionary h2 {
+    font-size: 18px;
+  }
+
+  .Dictionary input {
+    width: 80%;
+  }
+  .Dictionary section {
+    padding: 20px;
+  }
+  main {
+    padding: 5px 10px;
+  }
 }

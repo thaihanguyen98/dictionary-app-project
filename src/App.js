@@ -5,13 +5,14 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <header className="App-header"></header>
-        <main>
-          <Dictionary defaultKeyword="hello" />
-        </main>
-        <footer className="App-footer">Coded by Thai Ha Nguyen</footer>
-      </div>
+      <Dictionary defaultKeyword="hello" />
+      <footer className="App-footer">
+        {" "}
+        <a href="https://github.com/thaihanguyen98/dictionary-app-project">
+          <i class="fa-brands fa-github"></i> Open-source code{" "}
+        </a>
+        by Thai Ha Nguyen
+      </footer>
     </div>
   );
 }
