@@ -41,7 +41,7 @@ To run this project on your local machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/dictionary-app.git
+   git clone https://github.com/thaihanguyen98/dictionary-app.git
 
 Your app will be running at http://localhost:3000.
 
